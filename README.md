@@ -96,6 +96,8 @@ The usage of the tool requires these two steps:
 1. Preparing the standardized format input file in Excel
 2. Running the Python tool pointing to the input file
 
+To perform the steps, the user can do the following:
+
 1. The tool requires an excel input file populated with standardized tables. The table
 standardization entails the table naming and column labeling conventions. The
 conventions are presented on the info tab of the test input file available at the 
