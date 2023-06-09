@@ -23,27 +23,27 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 
-repo_name = "cfh_task_4"
+repo_name = "QUOP"
 analysis = "prioritization"
 
-long_description = "This package contains a CFH prioritization tool."
+long_description = "This package contains a quantitative universal option prioritizer (QUOP) tool."
 
 setup(
     name=repo_name,
     version=get_version(os.path.join(analysis,"__init__.py")),
-    description="CFH " + analysis.lower() + " tool",
+    description="Decision-making " + analysis.lower() + " tool",
     long_description=long_description,
     # The project's main homepage.
-    url="https://bitbucket.org/eetd-ees/prioritization",
+    url="https://github.com/LBNL-ETA/QUOP",
     # Author details
     author="Milica Grahovac",
     # Choose your license
-    license="EAEI BTUS ETA LBNL software",
+    license="BSD-3-Clause-LBNL",
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Programming Language :: Python :: 3.8",
     ],
-    keywords="prioritization CFH decisionmaking",
+    keywords="prioritization decision-making AHP choice",
     packages=find_packages(exclude=["docs"]),
     install_requires=[
         "pandas>=1.0.3",
