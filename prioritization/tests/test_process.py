@@ -70,4 +70,3 @@ class PrioritizerTests(unittest.TestCase):
         else:
             print(self.prioritizer.scores_and_weights)
 
-        breakpoint()

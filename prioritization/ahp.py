@@ -323,14 +323,11 @@ class PriorityWeights(object):
         if consistency_index==0:
             inconsistency_ratio=0.0
         else:
-            try:
-                inconsistency_ratio = (consistency_index*100)/\
-                    (100*self.random_index.loc[
-                        self.random_index[
-                            self.l["pr_mtrx_ord"]]==len(priority_scores_array),
-                        self.l['ri']].reset_index(drop=True)[0])
-            except:
-                breakpoint()
+            inconsistency_ratio = (consistency_index*100)/\
+                (100*self.random_index.loc[
+                    self.random_index[
+                        self.l["pr_mtrx_ord"]]==len(priority_scores_array),
+                    self.l['ri']].reset_index(drop=True)[0])
 
         if inconsistency_ratio>consistency_threshold:
             msg = "Priority ratings assigned in input table {} "\

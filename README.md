@@ -155,15 +155,15 @@ The package contains a unit tests with a basic coverage. Those can be run for th
 python -m unittest discover
 ```
 
-To perform prioritization based on the input file, a simple functional test can be called with:
+To perform prioritization based on the input file, a simple functional test can be called with, from the repo root:
 ```
-python -m unittest prioritizer.tests.test_process
+python -m unittest prioritization.tests.test_process
 ```
 
 To unit test each individual module, one can run:
 ```
-python -m unittest prioritizer.tests.test_ahp
-python -m unittest prioritizer.tests.test_scoring
+python -m unittest prioritization.tests.test_ahp
+python -m unittest prioritization.tests.test_scoring
 ```
 
 ## Contributing
@@ -176,7 +176,7 @@ The software may be distributed under the copyright and a BSD license provided i
 
 Milica Grahovac, Shreya Agarwal, Brian Gerke, Sarah Smith, and Marius Stuebs created the contents of this repo and developed its methodology in the scope of the CEC [CalFlexHub](https://calflexhub.lbl.gov/) project.
 
-To cite use format provided at the [DOE CODE](https://www.osti.gov/doecode/biblio/*mg_add_link) QUOP record.
+To cite use format provided at the [DOE CODE TBD](https://www.osti.gov/doecode/biblio/*mg_add_link) QUOP record.
 
 ## Acknowledgements
 

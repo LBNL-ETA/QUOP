@@ -173,5 +173,4 @@ class PriorityWeightsTests(unittest.TestCase):
         """
         priority_weights = self.ahp.calculate()
         self.ahp.plot_weights()
-        breakpoint()
-        pass
+
