@@ -180,4 +180,4 @@ To cite use format provided at the [DOE CODE TBD](https://www.osti.gov/doecode/b
 
 ## Acknowledgements
 
-This work was supported by the California Energy Commission, Public Interest Energy Research Program, under Contract No. *mg_add_cec_pid.
+This work was supported by the California Energy Commission, Public Interest Energy Research Program, under Contract No. EPC-20-025.
