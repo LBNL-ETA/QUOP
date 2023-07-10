@@ -176,7 +176,7 @@ The software may be distributed under the copyright and a BSD license provided i
 
 Milica Grahovac, Shreya Agarwal, Brian Gerke, Sarah Smith, and Marius Stuebs created the contents of this repo and developed its methodology in the scope of the CEC [CalFlexHub](https://calflexhub.lbl.gov/) project.
 
-To cite use format provided at the [DOE CODE TBD](https://www.osti.gov/doecode/biblio/*mg_add_link) QUOP record.
+To cite use format provided at the [DOE CODE TBD](https://doi.org/10.11578/dc.20230706.2) QUOP record.
 
 ## Acknowledgements
 
