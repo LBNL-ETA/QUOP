@@ -96,7 +96,7 @@ The usage of the tool requires these two steps:
 1. Preparing the standardized format input file in Excel
 2. Running the Python tool pointing to the input file
 
-To perform the steps, the user can do the following:
+To perform the steps, the user can do the following ([for convenience also provided as a Python notebook](scripts/example.ipynb)):
 
 1. The tool requires an excel input file populated with standardized tables. The table
 standardization entails the table naming and column labeling conventions. The
@@ -118,8 +118,9 @@ prioritizer = Prioritizer(
         writeout=True,
         create_plots=True,
         os_mapping={
-            'my OS' : 'root path', 
-            'my other OS' : 'my other root path'},
+            'win32': my root path, for example ' X:',
+            'darwin': my root path, for example '/Volumes/A',
+            'linux': my root path, for example '/media/b'})
         number_of_ranking_bins=3,
         lower_ranking_limit_0=False,
         ranking_bin_labels=['red', 'yellow', 'green']
@@ -133,16 +134,24 @@ prioritizer = Prioritizer(
         inpath="prioritization/tests/test_input.xlsx",
         writeout=True,
         create_plots=True,
-        os_mapping={'win32': 'C:'},
+        os_mapping={
+            'win32': 'C:',
+            'darwin': '/Volumes/A',
+            'linux': '/media/b'},
         number_of_ranking_bins=3,
         lower_ranking_limit_0=False,
         ranking_bin_labels=['red', 'yellow', 'green']
         )
 ```
 
-The prioritization results can then be obtainied as follows:
+The prioritization results can then be calculated as follows:
 ```
 prioritizer.calculate()
+```
+
+The main results are stored in a dictionary with keys `long`, `pivoted`, and `summed_and_ranked`:
+```
+result = prioritizer.scores_and_weights
 ```
 
 Further details about each of the input keyward arguments are, as is common, provided in the 
@@ -176,7 +185,7 @@ The software may be distributed under the copyright and a BSD license provided i
 
 Milica Grahovac, Shreya Agarwal, Brian Gerke, Sarah Smith, and Marius Stuebs created the contents of this repo and developed its methodology in the scope of the CEC [CalFlexHub](https://calflexhub.lbl.gov/) project.
 
-To cite use format provided at the [DOE CODE](https://doi.org/10.11578/dc.20230706.2) QUOP record.
+To cite use format provided at the [DOE CODE](https://www.osti.gov/biblio/1988273) QUOP record.
 
 ## Acknowledgements
 
